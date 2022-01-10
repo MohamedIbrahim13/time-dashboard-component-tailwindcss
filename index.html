@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./build/styles.css" />
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body class="font-light md:h-screen">
+
+  <div class="w-[80vw] grid md:grid-cols-12 grid-cols-1 gap-6 h-auto">
+    <div class="md:col-span-3 col-span-1 rounded-xl bg-[color:var(--darkBlue)]">
+      <div class="flex md:flex-col md:items-start flex-row items-center justify-between rounded-xl bg-[color:var(--blue)] float-none p-6">
+        <img src="./images/image-jeremy.png" class="rounded-full border-white border-2 md:w-16 md:h-16 w-20 h-20" alt="Jermey">
+        <div class="md:mt-7 my-6 md:mb-20">
+          <p class="text-sm text-[color:var(--paleBlue)]">Report for</p>
+          <h1 class="md:text-4xl text-2xl">Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="flex md:flex-col md:items-start flex-row items-center justify-between px-6 pt-5 pb-6 text-sm">
+        <button class="block hover:text-white text-[color:var(--desaturatedBlue)]  daily">Daily</button>
+        <button class="active-text block my-3 text-[color:var(--desaturatedBlue)] hover:text-white weekly">Weekly</button>
+        <button class="block hover:text-white text-[color:var(--desaturatedBlue)]  monthly">Monthly</button>
+      </div>
+    </div>
+    <div class="md:col-span-9 col-span-1 grid md:grid-cols-3 grid-cols-1 gap-6">
+      <div class="rounded-xl pt-10" id="work">
+       
+        <div class="w-full h-full p-6 text-sm rounded-xl bg-[color:var(--darkBlue)] hover:bg-[color:var(--desaturatedBlue)]">
+          <div class="flex justify-between items-center mb-5">
+            <p class="font-normal">Work</p>
+            <div><span><img src="./images/icon-ellipsis.svg" alt=""></span></div>
+          </div>
+          <div class="flex md:flex-col md:items-start flex-row justify-between items-center">
+            <h1 class="md:text-6xl text-3xl" id="current"></h1>
+            <p class="text-base text-[color:var(--paleBlue)] md:mt-2 mt-0" id="previous"></p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl pt-10" id="play">
+       
+        <div class="w-full h-full p-6 text-sm rounded-xl bg-[color:var(--darkBlue)] hover:bg-[color:var(--desaturatedBlue)]">
+          <div class="flex justify-between items-center mb-5">
+            <p class="font-normal">Play</p>
+            <div><span><img src="./images/icon-ellipsis.svg" alt=""></span></div>
+          </div>
+          <div class="flex md:flex-col md:items-start flex-row justify-between items-center">
+            <h1 class="md:text-6xl text-3xl" id="current"></h1>
+            <p class="text-base text-[color:var(--paleBlue)] md:mt-2 mt-0" id="previous"></p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl pt-10" id="study">
+       
+        <div class="w-full h-full p-6 text-sm rounded-xl bg-[color:var(--darkBlue)] hover:bg-[color:var(--desaturatedBlue)]">
+          <div class="flex justify-between items-center mb-5">
+            <p class="font-normal">Study</p>
+            <div><span><img src="./images/icon-ellipsis.svg" alt=""></span></div>
+          </div>
+          <div class="flex md:flex-col md:items-start flex-row justify-between items-center">
+            <h1 class="md:text-6xl text-3xl" id="current"></h1>
+            <p class="text-base text-[color:var(--paleBlue)] md:mt-2 mt-0" id="previous"></p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-xl pt-10" id="exercise">
+       
+        <div class="w-full h-full p-6 text-sm rounded-xl bg-[color:var(--darkBlue)] hover:bg-[color:var(--desaturatedBlue)]">
+          <div class="flex justify-between items-center mb-5">
+            <p class="font-normal">Exercise</p>
+            <div><span><img src="./images/icon-ellipsis.svg" alt=""></span></div>
+          </div>
+          <div class="flex md:flex-col md:items-start flex-row justify-between items-center">
+            <h1 class="md:text-6xl text-3xl" id="current"></h1>
+            <p class="text-base text-[color:var(--paleBlue)] md:mt-2 mt-0" id="previous"></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="rounded-xl pt-10" id="social">
+       
+        <div class="w-full h-full p-6 text-sm rounded-xl bg-[color:var(--darkBlue)] hover:bg-[color:var(--desaturatedBlue)]">
+          <div class="flex justify-between items-center mb-5">
+            <p class="font-normal">Social</p>
+            <div><span><img src="./images/icon-ellipsis.svg" alt=""></span></div>
+          </div>
+          <div class="flex md:flex-col md:items-start flex-row justify-between items-center">
+            <h1 class="md:text-6xl text-3xl" id="current"></h1>
+            <p class="text-base text-[color:var(--paleBlue)] md:mt-2 mt-0" id="previous"></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="rounded-xl pt-10" id="care">
+       
+        <div class="w-full h-full p-6 text-sm rounded-xl bg-[color:var(--darkBlue)] hover:bg-[color:var(--desaturatedBlue)]">
+          <div class="flex justify-between items-center mb-5">
+            <p class="font-normal">Self Care</p>
+            <div><span><img src="./images/icon-ellipsis.svg" alt=""></span></div>
+          </div>
+          <div class="flex md:flex-col md:items-start flex-row justify-between items-center">
+            <h1 class="md:text-6xl text-3xl" id="current"></h1>
+            <p class="text-base text-[color:var(--paleBlue)] md:mt-2 mt-0" id="previous"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+  </div>
+  
+  <script src="./app.js"></script>
+</body>
+
+</html>

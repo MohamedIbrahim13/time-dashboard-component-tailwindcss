@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: 18px;
+  background-color: var(--veryDarkBlue);
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --work: hsl(15, 100%, 70%);
+  --play: hsl(195, 74%, 62%);
+  --study: hsl(348, 100%, 68%);
+  --exercise: hsl(145, 58%, 55%);
+  --social: hsl(264, 64%, 52%);
+  --selfCare: hsl(43, 84%, 65%);
+  --veryDarkBlue: hsl(226, 43%, 10%);
+  --darkBlue: hsl(235, 46%, 20%);
+  --desaturatedBlue: hsl(235, 45%, 61%);
+  --paleBlue: hsl(236, 100%, 87%);
+}
+
+#work{
+  background-color: var(--work);
+  background-image: url('../images/icon-work.svg');
+  background-repeat: no-repeat;
+  background-position: top -10px right 1rem;
+}
+
+#exercise{
+  background-color: var(--exercise);
+  background-image: url('../images/icon-exercise.svg');
+  background-repeat: no-repeat;
+  background-position: top -10px right 1rem;
+}
+
+#play{
+  background-color: var(--play);
+  background-image: url('../images/icon-play.svg');
+  background-repeat: no-repeat;
+  background-position: top -10px right 1rem;
+}
+
+#social{
+  background-color: var(--social);
+  background-image: url('../images/icon-social.svg');
+  background-repeat: no-repeat;
+  background-position: top -10px right 1rem;
+}
+
+#study{
+  background-color: var(--study);
+  background-image: url('../images/icon-study.svg');
+  background-repeat: no-repeat;
+  background-position: top -10px right 1rem;
+}
+
+#care{
+  background-color: var(--selfCare);
+  background-image: url('../images/icon-self-care.svg');
+  background-repeat: no-repeat;
+  background-position: top -10px right 1rem;
+}
+
+
+.active-text{
+  color: white;
+}
